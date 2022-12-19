@@ -45,7 +45,7 @@ public class Counter {
     }
 
     public boolean hasNext() {
-        return digits[0] != base - (digits.length);
+        return digits[0] != base - digits.length;
     }
     public int getNumberOfDigits() {
         return digits.length;

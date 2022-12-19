@@ -28,7 +28,7 @@ public class Main {
         System.out.println("a and b  = " + both);
         System.out.println(bothAt4thTurn);
 
-        System.out.println("a and b as lowest Fraction: = " + NumberUtils.reductFractionToLowestTerms(both, sampleSpace.size()).asSingleTermFraction()
+        System.out.println("a and b as lowest Fraction: = " + Fraction.of((int) both, sampleSpace.size()).toReductedFraction().asSingleTermFraction()
                 + " = " + both / (float) sampleSpace.size());
 
 
@@ -45,7 +45,7 @@ public class Main {
         System.out.println("(a) card at most 4th turn = " + cardAtMost4thTurn2);
         System.out.println("(b) card at most 6th turn = " + cardAtMost6thTurn2);
         System.out.println("a and b  = " + both2);
-        System.out.println("a and b as lowest Fraction: = " + NumberUtils.reductFractionToLowestTerms(both2, sampleSpace2.size()).asSingleTermFraction()
+        System.out.println("a and b as lowest Fraction: = " + Fraction.of((int) both2, sampleSpace2.size()).toReductedFraction().asSingleTermFraction()
                 + " = " + both2 / (float) sampleSpace2.size());
     }
 

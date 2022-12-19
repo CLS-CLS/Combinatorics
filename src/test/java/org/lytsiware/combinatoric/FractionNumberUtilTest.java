@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-class NumberUtilTest {
+class FractionNumberUtilTest {
 
 
     @Test
@@ -16,6 +16,6 @@ class NumberUtilTest {
 
     @Test
     void reductFractionTest() {
-        Assertions.assertEquals(new NumberUtils.Fraction(List.of(2, 3), List.of(5)), NumberUtils.reductFractionToLowestTerms(84, 70));
+        Assertions.assertEquals(new Fraction(List.of(2, 3), List.of(5)), Fraction.of(84, 70).toReductedFraction());
     }
 }
